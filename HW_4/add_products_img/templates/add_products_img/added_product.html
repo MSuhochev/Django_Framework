@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header-middle bg-white py-4">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-sm-6 col-lg-6 order-md-1 text-home">
+                <h3>Товар добавлен в базу данных:</h3>
+                <div>
+                    {{ product }}
+                    <img src="{{ MEDIA_URL }}{{ product.product_img }}" alt="Product Image" width="40%">
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-md-2 cart-buttons d-none d-lg-block">
+                <img src="{% static 'add_products_img/img/img_1.jpg' %}" alt="some-picture" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- ./end-form -->
+{% endblock %}

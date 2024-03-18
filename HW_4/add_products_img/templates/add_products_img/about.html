@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <div class="header-middle bg-white py-4">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-sm-6 col-lg-6 order-md-2 text-home">
+                <h3>{{ title|capfirst }}:</h3>
+                <div>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis, eligendi illum laudantium molestias obcaecati temporibus ut voluptatibus? Architecto atque autem cum, debitis dolore error expedita neque perspiciatis possimus recusandae?</span><span>Architecto assumenda at consequuntur deleniti dicta dolorem earum eligendi esse eveniet facilis fuga hic illum libero maxime, mollitia natus necessitatibus neque nulla officiis, omnis pariatur quasi repellat repudiandae veniam vitae.</span><span>Ab amet aperiam architecto commodi consequuntur error eum ex excepturi ipsam iure maiores nihil officiis pariatur porro quas quidem recusandae reprehenderit sapiente sequi similique tempore ullam unde veritatis voluptatem, voluptatibus?</span><span>A accusantium aliquid beatae consequatur corporis deleniti, dignissimos illo ipsa iste libero maiores molestiae necessitatibus, nesciunt nulla obcaecati officia perspiciatis quae quis quos repellat saepe similique sit soluta tempore vero.</span><span>Amet dolorem eius esse fuga laudantium nemo optio praesentium quas quidem, quisquam reiciendis sint, soluta tempore! Aliquam atque blanditiis, consequatur cupiditate debitis deserunt dolore ea earum ipsa perferendis quibusdam sunt.</span></p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-md-1 cart-buttons d-none d-lg-block">
+                <img src="{% static 'add_products_img/img/img_2.jpg' %}" alt="some-picture" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- ./end-form -->
+{% endblock %}block %}

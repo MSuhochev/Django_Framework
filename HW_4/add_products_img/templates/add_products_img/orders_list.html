@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header-middle bg-white py-4">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-sm-6 col-lg-6 order-md-1 text-home">
+                <h3>{{ title|capfirst }}:</h3>
+                <div>
+                    {% if ordered_products %}
+                    <h3>Список заказанных клиентом {{ client.name }} товаров за {{ period_ru }}:</h3>
+
+                    <ul>
+                        {% for product in ordered_products %}
+                        <li>{{ product.name }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p>Нет товаров заказанных за этот период.</p>
+                    {% endif %}
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-md-2 cart-buttons d-none d-lg-block">
+                <img src="{% static 'add_products_img/img/img_1.jpg' %}" alt="some-picture" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- ./end-form -->
+{% endblock %}

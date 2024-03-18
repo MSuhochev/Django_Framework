@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header-middle bg-white py-4">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-sm-6 col-lg-6 order-md-1 text-home">
+                <h3>Заполните форму<br>для добавления продукта в базу данных:</h3>
+                <div>
+                    <form method="POST" enctype="multipart/form-data" >
+                        {% csrf_token %}
+                        <div>
+                            {% for field in form %}
+                            <div class="form-group">
+                                {{field.label_tag}}
+                                <div>{{field}}</div>
+
+                                {% if field.errors%}
+                                {% for error in field.errors %}
+                                <div class="alert alert-danger">
+                                    {{error}}
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <input type="submit" value="Добавить">
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-md-2 cart-buttons d-none d-lg-block">
+                <img src="{% static 'add_products_img/img/img_1.jpg' %}" alt="some-picture" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- ./end-form -->
+{% endblock %}
