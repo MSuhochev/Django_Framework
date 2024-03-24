@@ -1,0 +1,915 @@
+INFO 2024-03-16 19:55:13,770 autoreload 7380 3660 Watching for file changes with StatReloader
+INFO 2024-03-16 19:55:16,970 basehttp 7380 10896 "GET / HTTP/1.1" 200 4752
+WARNING 2024-03-16 19:55:17,663 log 7380 10896 Not Found: /favicon.ico
+WARNING 2024-03-16 19:55:17,664 basehttp 7380 10896 "GET /favicon.ico HTTP/1.1" 404 2834
+INFO 2024-03-16 19:55:21,065 basehttp 7380 10896 "GET / HTTP/1.1" 200 4752
+INFO 2024-03-16 19:55:22,421 basehttp 7380 10896 "GET /about/ HTTP/1.1" 200 3562
+INFO 2024-03-16 19:55:23,953 basehttp 7380 10896 "GET /find_orders/ HTTP/1.1" 200 3482
+INFO 2024-03-16 19:55:26,195 basehttp 7380 10896 "GET / HTTP/1.1" 200 4752
+INFO 2024-03-16 22:10:05,763 autoreload 6976 14564 Watching for file changes with StatReloader
+INFO 2024-03-16 22:10:08,798 basehttp 6976 9908 "GET / HTTP/1.1" 200 4752
+WARNING 2024-03-16 22:10:08,926 basehttp 6976 14796 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:10:08,926 basehttp 6976 15476 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:10:08,927 basehttp 6976 9908 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:10:08,927 basehttp 6976 8572 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+WARNING 2024-03-16 22:10:09,193 log 6976 13520 Not Found: /favicon.ico
+WARNING 2024-03-16 22:10:09,193 basehttp 6976 13520 "GET /favicon.ico HTTP/1.1" 404 3018
+WARNING 2024-03-16 22:10:43,201 log 6976 13520 Not Found: /add_product_form
+WARNING 2024-03-16 22:10:43,201 basehttp 6976 13520 "GET /add_product_form HTTP/1.1" 404 3033
+INFO 2024-03-16 22:10:50,985 basehttp 6976 13520 "GET /add_product HTTP/1.1" 301 0
+INFO 2024-03-16 22:10:51,010 basehttp 6976 14780 "GET /add_product/ HTTP/1.1" 200 4403
+WARNING 2024-03-16 22:10:51,073 basehttp 6976 14780 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:10:51,077 basehttp 6976 8032 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:10:51,078 basehttp 6976 16140 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:10:51,083 basehttp 6976 11352 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+ERROR 2024-03-16 22:13:09,121 log 6976 13936 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 82, in add_product_form
+    form = AddProductForm(request.POST, request.FILE)
+                                        ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'FILE'
+ERROR 2024-03-16 22:13:09,124 basehttp 6976 13936 "POST /add_product/ HTTP/1.1" 500 67516
+ERROR 2024-03-16 22:15:48,850 log 6976 13936 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 82, in add_product_form
+    form = AddProductForm(request.POST, request.FILE)
+                                        ^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'FILE'
+ERROR 2024-03-16 22:15:48,853 basehttp 6976 13936 "POST /add_product/ HTTP/1.1" 500 67516
+INFO 2024-03-16 22:16:57,474 autoreload 6976 14564 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-16 22:16:58,049 autoreload 12928 2656 Watching for file changes with StatReloader
+INFO 2024-03-16 22:17:16,114 basehttp 12928 16208 "POST /add_product/ HTTP/1.1" 200 4805
+WARNING 2024-03-16 22:17:16,191 basehttp 12928 16208 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:17:16,191 basehttp 12928 15044 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+WARNING 2024-03-16 22:17:16,192 basehttp 12928 10348 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:17:16,192 basehttp 12928 9252 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+ERROR 2024-03-16 22:20:05,790 log 12928 2676 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 83, in add_product_form
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+ERROR 2024-03-16 22:20:05,794 basehttp 12928 2676 "POST /add_product/ HTTP/1.1" 500 96015
+INFO 2024-03-16 22:22:42,791 autoreload 7828 11788 Watching for file changes with StatReloader
+INFO 2024-03-16 22:22:48,667 basehttp 7828 3088 "GET / HTTP/1.1" 200 4752
+WARNING 2024-03-16 22:22:48,750 basehttp 7828 9436 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:22:48,751 basehttp 7828 7560 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+WARNING 2024-03-16 22:22:48,751 basehttp 7828 3088 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:22:48,752 basehttp 7828 4212 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+INFO 2024-03-16 22:22:54,752 basehttp 7828 16792 "GET /add_product/ HTTP/1.1" 200 4433
+WARNING 2024-03-16 22:22:54,832 basehttp 7828 12040 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:22:54,832 basehttp 7828 16792 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:22:54,836 basehttp 7828 17344 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:22:54,837 basehttp 7828 4792 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+INFO 2024-03-16 22:23:27,789 basehttp 7828 1496 "POST /add_product/ HTTP/1.1" 200 4499
+WARNING 2024-03-16 22:23:27,884 basehttp 7828 16292 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:23:27,884 basehttp 7828 1496 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:23:27,885 basehttp 7828 13368 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:23:27,889 basehttp 7828 10392 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+INFO 2024-03-16 22:26:49,377 autoreload 7828 11788 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-16 22:26:49,940 autoreload 13020 9020 Watching for file changes with StatReloader
+INFO 2024-03-16 22:27:33,075 basehttp 13020 1608 "POST /add_product/ HTTP/1.1" 200 4503
+WARNING 2024-03-16 22:27:33,195 basehttp 13020 14896 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+WARNING 2024-03-16 22:27:33,195 basehttp 13020 5992 "GET /static/first_task_app/css/my.styles.css HTTP/1.1" 404 1855
+WARNING 2024-03-16 22:27:33,196 basehttp 13020 1608 "GET /static/first_task_app/css/bootstrap.min.css HTTP/1.1" 404 1867
+WARNING 2024-03-16 22:27:33,201 basehttp 13020 644 "GET /static/first_task_app/js/bootstrap.min.js HTTP/1.1" 404 1861
+INFO 2024-03-16 22:30:35,059 basehttp 13020 16156 "POST /add_product/ HTTP/1.1" 200 4509
+WARNING 2024-03-16 22:30:35,144 basehttp 13020 15884 "GET /static/first_task_app/img/img_1.jpg HTTP/1.1" 404 1843
+INFO 2024-03-16 22:30:35,298 basehttp 13020 8400 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-16 22:30:35,315 basehttp 13020 16156 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-16 22:30:35,337 basehttp 13020 2360 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+INFO 2024-03-16 22:32:21,045 basehttp 13020 2360 "POST /add_product/ HTTP/1.1" 200 4511
+INFO 2024-03-16 22:32:21,130 basehttp 13020 2360 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-16 22:33:19,903 basehttp 13020 2360 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-16 22:33:21,578 basehttp 13020 2360 "GET /find_orders/ HTTP/1.1" 200 3490
+INFO 2024-03-16 22:33:23,651 basehttp 13020 2360 "GET /about/ HTTP/1.1" 200 3570
+INFO 2024-03-16 22:33:24,055 basehttp 13020 2360 "GET /static/add_products_img/img/img_2.jpg HTTP/1.1" 200 32052
+INFO 2024-03-16 22:33:24,915 basehttp 13020 2360 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-16 22:33:25,745 basehttp 13020 2360 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-16 22:33:43,409 basehttp 13020 2360 "POST /add_product/ HTTP/1.1" 200 4530
+INFO 2024-03-16 22:33:55,128 basehttp 13020 2360 "POST /add_product/ HTTP/1.1" 200 4530
+INFO 2024-03-17 10:31:24,680 autoreload 10832 1856 Watching for file changes with StatReloader
+INFO 2024-03-17 10:31:28,349 basehttp 10832 11192 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 10:31:29,084 basehttp 10832 14120 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 10:31:29,090 basehttp 10832 780 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-17 10:31:29,093 basehttp 10832 11192 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-17 10:31:29,266 basehttp 10832 14120 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-17 10:31:29,278 basehttp 10832 780 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+WARNING 2024-03-17 10:31:30,728 log 10832 780 Not Found: /favicon.ico
+WARNING 2024-03-17 10:31:30,729 basehttp 10832 780 "GET /favicon.ico HTTP/1.1" 404 3018
+WARNING 2024-03-17 10:31:30,752 log 10832 14120 Not Found: /favicon.ico
+WARNING 2024-03-17 10:31:30,753 basehttp 10832 14120 "GET /favicon.ico HTTP/1.1" 404 3018
+INFO 2024-03-17 10:31:42,070 basehttp 10832 4728 "GET /add_product HTTP/1.1" 301 0
+INFO 2024-03-17 10:31:42,190 basehttp 10832 6148 "GET /add_product/ HTTP/1.1" 200 4441
+INFO 2024-03-17 10:32:45,838 basehttp 10832 6148 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 10:43:46,727 basehttp 10832 9500 "POST /add_product/ HTTP/1.1" 200 2761
+INFO 2024-03-17 10:46:47,708 autoreload 10832 1856 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 10:46:48,903 autoreload 11668 14676 Watching for file changes with StatReloader
+ERROR 2024-03-17 10:46:55,351 log 11668 17188 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 99, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than list.
+ERROR 2024-03-17 10:46:55,356 basehttp 11668 17188 "POST /add_product/ HTTP/1.1" 500 86925
+INFO 2024-03-17 10:47:34,524 autoreload 11668 14676 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 10:47:35,140 autoreload 5764 13196 Watching for file changes with StatReloader
+INFO 2024-03-17 10:47:37,143 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 200 2391
+ERROR 2024-03-17 10:48:38,342 log 5764 988 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: '{{', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-03-17 10:48:38,351 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 500 170599
+INFO 2024-03-17 10:49:22,115 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 200 2328
+ERROR 2024-03-17 10:51:22,289 log 5764 988 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: './media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: './media', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-03-17 10:51:22,299 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 500 170802
+INFO 2024-03-17 10:52:19,710 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 200 2391
+INFO 2024-03-17 10:54:48,294 basehttp 5764 988 "POST /add_product/ HTTP/1.1" 200 2384
+WARNING 2024-03-17 10:54:48,364 basehttp 5764 988 "GET /static/media/%7B%7Bimage%7D%7D HTTP/1.1" 404 1812
+INFO 2024-03-17 10:55:41,256 autoreload 5764 13196 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 10:55:42,011 autoreload 16860 1620 Watching for file changes with StatReloader
+INFO 2024-03-17 10:55:44,129 basehttp 16860 14396 "POST /add_product/ HTTP/1.1" 200 2390
+WARNING 2024-03-17 10:55:44,202 basehttp 16860 14396 "GET /static/media/%7B%7B%20image%20%7D%7D HTTP/1.1" 404 1822
+ERROR 2024-03-17 10:57:56,043 log 16860 3600 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: '../'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: '../', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-03-17 10:57:56,051 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 500 170671
+ERROR 2024-03-17 10:59:00,397 log 16860 3600 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: '{{', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-03-17 10:59:00,403 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 500 170562
+ERROR 2024-03-17 10:59:24,227 log 16860 3600 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: '{{', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-03-17 10:59:24,236 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 500 170512
+INFO 2024-03-17 11:00:13,220 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 200 2383
+WARNING 2024-03-17 11:00:13,294 log 16860 3600 Not Found: /add_product/HW_4/media/Redmi_note12pro.jpg
+WARNING 2024-03-17 11:00:13,295 basehttp 16860 3600 "GET /add_product/HW_4/media/Redmi_note12pro.jpg HTTP/1.1" 404 3111
+INFO 2024-03-17 11:01:25,134 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 200 2381
+WARNING 2024-03-17 11:01:25,203 log 16860 3600 Not Found: /media/Redmi_note12pro.jpg
+WARNING 2024-03-17 11:01:25,204 basehttp 16860 3600 "GET /media/Redmi_note12pro.jpg HTTP/1.1" 404 3060
+INFO 2024-03-17 11:02:35,265 basehttp 16860 3600 "POST /add_product/ HTTP/1.1" 200 2483
+WARNING 2024-03-17 11:02:35,342 log 16860 3600 Not Found: /media/Redmi_note12pro.jpg
+WARNING 2024-03-17 11:02:35,343 basehttp 16860 3600 "GET /media/Redmi_note12pro.jpg HTTP/1.1" 404 3060
+INFO 2024-03-17 11:10:57,709 autoreload 5432 10996 Watching for file changes with StatReloader
+INFO 2024-03-17 11:10:59,810 basehttp 5432 14252 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 11:11:02,354 basehttp 5432 14252 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 11:11:06,637 basehttp 5432 14252 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 11:11:42,870 basehttp 5432 14252 "POST /add_product/ HTTP/1.1" 200 2436
+ERROR 2024-03-17 11:12:50,529 log 5432 14252 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 98, in add_product_form
+    return render(request, 'add_products_img/added_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{ image' from 'product.{{ image'
+ERROR 2024-03-17 11:12:50,538 basehttp 5432 14252 "POST /add_product/ HTTP/1.1" 500 177428
+INFO 2024-03-17 11:13:09,180 basehttp 5432 14252 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 11:13:38,177 basehttp 5432 14252 "POST /add_product/ HTTP/1.1" 200 2436
+INFO 2024-03-17 11:14:54,513 basehttp 5432 14252 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 11:14:56,656 basehttp 5432 14252 "POST /add_product/ HTTP/1.1" 200 389
+INFO 2024-03-17 11:16:27,704 basehttp 5432 14252 "POST /add_product/ HTTP/1.1" 200 389
+INFO 2024-03-17 11:22:48,341 autoreload 5432 10996 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 11:22:48,947 autoreload 7536 5520 Watching for file changes with StatReloader
+INFO 2024-03-17 11:22:58,271 basehttp 7536 10736 "POST /add_product/ HTTP/1.1" 200 2436
+INFO 2024-03-17 11:26:14,472 basehttp 7536 10736 "POST /add_product/ HTTP/1.1" 200 2478
+INFO 2024-03-17 11:28:50,220 basehttp 7536 10736 "POST /add_product/ HTTP/1.1" 200 2478
+INFO 2024-03-17 11:30:04,184 basehttp 7536 10736 "POST /add_product/ HTTP/1.1" 200 2672
+WARNING 2024-03-17 11:30:04,268 log 7536 10736 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 11:30:04,269 basehttp 7536 10736 "GET /add_product/tefal.jpg HTTP/1.1" 404 3048
+INFO 2024-03-17 11:33:54,799 autoreload 7536 5520 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:33:55,540 autoreload 15924 16512 Watching for file changes with StatReloader
+INFO 2024-03-17 11:34:24,527 autoreload 10220 16592 Watching for file changes with StatReloader
+INFO 2024-03-17 11:35:20,972 autoreload 10220 16592 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:35:21,550 autoreload 4536 7532 Watching for file changes with StatReloader
+INFO 2024-03-17 11:36:40,834 autoreload 4536 7532 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:36:41,440 autoreload 11600 7868 Watching for file changes with StatReloader
+INFO 2024-03-17 11:36:51,306 autoreload 11600 7868 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:36:51,929 autoreload 3204 12068 Watching for file changes with StatReloader
+INFO 2024-03-17 11:36:58,416 autoreload 3204 12068 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:36:59,002 autoreload 9412 5960 Watching for file changes with StatReloader
+INFO 2024-03-17 11:37:15,856 autoreload 9412 5960 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:37:16,498 autoreload 14728 996 Watching for file changes with StatReloader
+INFO 2024-03-17 11:37:24,260 autoreload 14728 996 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\urls.py changed, reloading.
+INFO 2024-03-17 11:37:24,918 autoreload 13136 14108 Watching for file changes with StatReloader
+INFO 2024-03-17 11:37:26,672 basehttp 13136 15064 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 11:37:31,542 basehttp 13136 15064 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 11:37:34,430 basehttp 13136 15064 "POST /add_product/ HTTP/1.1" 200 2672
+WARNING 2024-03-17 11:37:34,510 log 13136 15064 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 11:37:34,511 basehttp 13136 15064 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 11:47:40,324 autoreload 9200 7520 Watching for file changes with StatReloader
+INFO 2024-03-17 11:47:44,105 basehttp 9200 12196 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 11:47:52,308 basehttp 9200 12196 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 11:48:18,801 basehttp 9200 12196 "POST /add_product/ HTTP/1.1" 200 2672
+WARNING 2024-03-17 11:48:18,891 log 9200 12196 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 11:48:18,891 basehttp 9200 12196 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 11:52:52,187 autoreload 9200 7520 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\models.py changed, reloading.
+INFO 2024-03-17 11:52:52,839 autoreload 15632 12904 Watching for file changes with StatReloader
+INFO 2024-03-17 11:52:55,686 basehttp 15632 9404 "POST /add_product/ HTTP/1.1" 200 2695
+WARNING 2024-03-17 11:52:55,783 log 15632 9404 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 11:52:55,784 basehttp 15632 9404 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 11:53:11,661 autoreload 15632 12904 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\models.py changed, reloading.
+INFO 2024-03-17 11:53:12,293 autoreload 8220 14796 Watching for file changes with StatReloader
+INFO 2024-03-17 12:00:11,563 autoreload 8220 14796 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 12:00:12,191 autoreload 15564 3080 Watching for file changes with StatReloader
+INFO 2024-03-17 12:01:24,367 autoreload 15564 3080 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 12:01:24,960 autoreload 6792 8 Watching for file changes with StatReloader
+INFO 2024-03-17 12:01:26,587 basehttp 6792 12256 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 12:01:31,737 basehttp 6792 12256 "GET /add_product/ HTTP/1.1" 200 4442
+ERROR 2024-03-17 12:01:34,107 log 6792 12256 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py", line 97, in add_product_form
+    print(product.img)
+          ^^^^^^^^^^^
+AttributeError: 'Product' object has no attribute 'img'
+ERROR 2024-03-17 12:01:34,111 basehttp 6792 12256 "POST /add_product/ HTTP/1.1" 500 69561
+INFO 2024-03-17 12:02:03,893 autoreload 6792 8 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 12:02:04,496 autoreload 15460 4820 Watching for file changes with StatReloader
+INFO 2024-03-17 12:02:10,032 basehttp 15460 15484 "POST /add_product/ HTTP/1.1" 200 2672
+WARNING 2024-03-17 12:02:10,113 log 15460 15484 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 12:02:10,114 basehttp 15460 15484 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 12:05:08,331 basehttp 15460 15484 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 12:05:10,168 basehttp 15460 15484 "POST /add_product/ HTTP/1.1" 200 2672
+WARNING 2024-03-17 12:05:10,242 log 15460 15484 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 12:05:10,243 basehttp 15460 15484 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 12:05:59,038 basehttp 15460 15484 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 12:06:00,921 basehttp 15460 15484 "POST /add_product/ HTTP/1.1" 200 2478
+INFO 2024-03-17 12:06:37,138 autoreload 15912 13464 Watching for file changes with StatReloader
+INFO 2024-03-17 12:06:39,059 basehttp 15912 10016 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 12:06:44,047 basehttp 15912 10016 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 12:06:46,276 basehttp 15912 10016 "POST /add_product/ HTTP/1.1" 200 2478
+INFO 2024-03-17 12:07:38,649 autoreload 15912 13464 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-17 12:07:39,280 autoreload 2172 7984 Watching for file changes with StatReloader
+INFO 2024-03-17 12:07:42,160 basehttp 2172 12572 "POST /add_product/ HTTP/1.1" 200 2436
+INFO 2024-03-17 12:08:27,799 basehttp 2172 12572 "POST /add_product/ HTTP/1.1" 200 2588
+WARNING 2024-03-17 12:08:27,879 log 2172 12572 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 12:08:27,880 basehttp 2172 12572 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 12:10:56,672 basehttp 2172 12572 "POST /add_product/ HTTP/1.1" 200 2618
+WARNING 2024-03-17 12:10:56,757 log 2172 12572 Not Found: /add_product/tefal.jpg
+WARNING 2024-03-17 12:10:56,758 basehttp 2172 12572 "GET /add_product/tefal.jpg HTTP/1.1" 404 3221
+INFO 2024-03-17 12:14:53,227 autoreload 2172 7984 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\models.py changed, reloading.
+INFO 2024-03-17 12:14:53,821 autoreload 13636 7076 Watching for file changes with StatReloader
+INFO 2024-03-17 12:15:00,429 autoreload 13636 7076 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\models.py changed, reloading.
+INFO 2024-03-17 12:15:01,007 autoreload 14328 9200 Watching for file changes with StatReloader
+INFO 2024-03-17 12:15:16,822 autoreload 14328 9200 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\models.py changed, reloading.
+INFO 2024-03-17 12:15:17,382 autoreload 1680 12724 Watching for file changes with StatReloader
+INFO 2024-03-17 12:19:53,286 autoreload 14580 9012 Watching for file changes with StatReloader
+INFO 2024-03-17 12:23:24,885 autoreload 13468 3148 Watching for file changes with StatReloader
+INFO 2024-03-17 12:23:27,290 basehttp 13468 14668 "GET / HTTP/1.1" 200 4760
+INFO 2024-03-17 12:23:33,287 basehttp 13468 14668 "GET /add_product/ HTTP/1.1" 200 4442
+INFO 2024-03-17 12:23:36,642 basehttp 13468 14668 "POST /add_product/ HTTP/1.1" 200 2632
+INFO 2024-03-17 12:23:36,832 basehttp 13468 14668 "GET /media/tefal.jpg HTTP/1.1" 200 397125
+INFO 2024-03-17 12:24:53,448 basehttp 13468 14668 "POST /add_product/ HTTP/1.1" 200 2660
+INFO 2024-03-17 12:24:53,528 basehttp 13468 14668 "GET /media/tefal_Vu1nrdL.jpg HTTP/1.1" 200 397125
+INFO 2024-03-17 12:25:53,327 basehttp 13468 14668 "POST /add_product/ HTTP/1.1" 200 2472
+INFO 2024-03-17 12:25:53,400 basehttp 13468 14668 "GET /media/tefal_dyGRepD.jpg HTTP/1.1" 200 397125
+INFO 2024-03-18 10:12:01,016 autoreload 13688 6156 Watching for file changes with StatReloader
+INFO 2024-03-18 10:12:09,289 basehttp 13688 16552 "POST /add_product/ HTTP/1.1" 200 2472
+INFO 2024-03-18 10:12:09,498 basehttp 13688 2312 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-18 10:12:09,507 basehttp 13688 12804 "GET /media/tefal_PlxuvbX.jpg HTTP/1.1" 200 397125
+INFO 2024-03-18 10:12:09,523 basehttp 13688 16552 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-18 10:12:09,528 basehttp 13688 3996 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-18 10:12:09,699 basehttp 13688 16552 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+WARNING 2024-03-18 10:12:09,839 log 13688 16552 Not Found: /favicon.ico
+WARNING 2024-03-18 10:12:09,840 basehttp 13688 16552 "GET /favicon.ico HTTP/1.1" 404 3191
+INFO 2024-03-18 10:14:41,080 basehttp 13688 12204 "GET / HTTP/1.1" 200 4976
+INFO 2024-03-18 10:14:43,583 basehttp 13688 12204 "GET /add_product/ HTTP/1.1" 200 4658
+INFO 2024-03-18 10:22:51,417 basehttp 13688 2976 "GET / HTTP/1.1" 200 5058
+WARNING 2024-03-18 10:22:51,666 basehttp 13688 2976 "GET /static/img/favicon.ico HTTP/1.1" 404 1804
+WARNING 2024-03-18 10:22:51,699 basehttp 13688 10584 "GET /static/img/favicon.ico HTTP/1.1" 404 1804
+INFO 2024-03-18 10:23:34,968 basehttp 13688 12320 "GET /about/ HTTP/1.1" 200 3885
+INFO 2024-03-18 10:23:35,021 basehttp 13688 12320 "GET /static/add_products_img/img/img_2.jpg HTTP/1.1" 200 32052
+INFO 2024-03-18 10:23:35,151 basehttp 13688 12320 "GET /static/add_products_img/img/favicon.ico HTTP/1.1" 200 1150
+INFO 2024-03-18 10:23:37,692 basehttp 13688 12320 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 10:24:13,388 basehttp 13688 12320 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 10:24:14,601 basehttp 13688 12320 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 10:24:15,221 basehttp 13688 12320 "GET /about/ HTTP/1.1" 200 3885
+INFO 2024-03-18 10:24:18,123 basehttp 13688 12320 "GET /find_orders/ HTTP/1.1" 200 3805
+INFO 2024-03-18 10:24:45,988 basehttp 13688 12320 "GET /add_product/ HTTP/1.1" 200 4757
+INFO 2024-03-18 10:26:17,330 autoreload 13688 6156 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-18 10:26:17,948 autoreload 3020 5520 Watching for file changes with StatReloader
+INFO 2024-03-18 10:26:18,113 basehttp 3020 2536 "GET /find_orders/ HTTP/1.1" 200 3805
+INFO 2024-03-18 10:26:19,272 basehttp 3020 2536 "GET /add_product/ HTTP/1.1" 200 4757
+INFO 2024-03-18 10:26:22,743 basehttp 3020 2536 "GET /find_orders/ HTTP/1.1" 200 3805
+INFO 2024-03-18 10:26:23,797 basehttp 3020 2536 "GET /add_product/ HTTP/1.1" 200 4757
+INFO 2024-03-18 10:26:25,064 basehttp 3020 2536 "GET /add_product/ HTTP/1.1" 200 4757
+INFO 2024-03-18 10:27:04,468 autoreload 3020 5520 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\views.py changed, reloading.
+INFO 2024-03-18 10:27:06,515 autoreload 1684 9188 Watching for file changes with StatReloader
+INFO 2024-03-18 10:30:26,936 autoreload 1684 9188 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\forms.py changed, reloading.
+INFO 2024-03-18 10:30:27,690 autoreload 16936 15668 Watching for file changes with StatReloader
+INFO 2024-03-18 10:30:33,087 basehttp 16936 12728 "GET /add_product/ HTTP/1.1" 200 4798
+INFO 2024-03-18 10:31:22,539 basehttp 16936 12728 "GET /add_product/ HTTP/1.1" 200 4810
+INFO 2024-03-18 10:32:13,939 basehttp 16936 12728 "GET /add_product/ HTTP/1.1" 200 4815
+INFO 2024-03-18 10:32:37,231 basehttp 16936 12728 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:32:38,866 basehttp 16936 12728 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:32:41,581 basehttp 16936 12728 "GET /find_orders/ HTTP/1.1" 200 3805
+INFO 2024-03-18 10:34:30,345 autoreload 16936 15668 D:\GeekBrains\1_28_Django\Homeworks\HW_4\add_products_img\forms.py changed, reloading.
+INFO 2024-03-18 10:34:31,102 autoreload 4720 5164 Watching for file changes with StatReloader
+INFO 2024-03-18 10:34:31,963 basehttp 4720 12292 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:34:33,457 basehttp 4720 12292 "GET /find_orders/ HTTP/1.1" 200 3849
+INFO 2024-03-18 10:34:39,666 basehttp 4720 12292 "GET /about/ HTTP/1.1" 200 3885
+INFO 2024-03-18 10:34:42,439 basehttp 4720 12292 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 10:34:43,420 basehttp 4720 12292 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:34:47,313 basehttp 4720 12292 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 10:36:22,439 basehttp 4720 12292 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:39:33,875 basehttp 4720 12292 "POST /add_product/ HTTP/1.1" 200 2780
+INFO 2024-03-18 10:39:34,082 basehttp 4720 12292 "GET /media/bosh_fen.jpg HTTP/1.1" 200 50906
+INFO 2024-03-18 10:45:10,453 autoreload 6104 16304 Watching for file changes with StatReloader
+INFO 2024-03-18 10:46:15,083 basehttp 6104 11968 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 10:47:34,393 basehttp 6104 11968 "POST /add_product/ HTTP/1.1" 200 2859
+INFO 2024-03-18 10:47:34,606 basehttp 6104 11968 "GET /media/pylesos_samsung.jpg HTTP/1.1" 200 473510
+INFO 2024-03-18 20:02:32,839 autoreload 268 15260 Watching for file changes with StatReloader
+INFO 2024-03-18 20:02:35,695 basehttp 268 13028 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-18 20:02:36,143 basehttp 268 17536 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-18 20:02:36,163 basehttp 268 13028 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-18 20:02:36,447 basehttp 268 6244 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-18 20:02:36,448 basehttp 268 11116 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+INFO 2024-03-18 20:02:36,635 basehttp 268 11116 "GET /static/add_products_img/img/favicon.ico HTTP/1.1" 200 1150
+INFO 2024-03-18 20:02:39,263 basehttp 268 11116 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-18 20:03:24,023 basehttp 268 12464 "POST /add_product/ HTTP/1.1" 200 2846
+INFO 2024-03-18 20:03:24,109 basehttp 268 12464 "GET /media/chat_simulation.jpg HTTP/1.1" 200 390663
+INFO 2024-03-21 22:13:20,746 autoreload 9684 6816 Watching for file changes with StatReloader
+INFO 2024-03-21 22:13:27,107 basehttp 9684 2152 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-21 22:13:27,693 basehttp 9684 9512 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-21 22:13:27,704 basehttp 9684 15424 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-21 22:13:27,722 basehttp 9684 2152 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-21 22:13:27,732 basehttp 9684 5228 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+INFO 2024-03-21 22:13:27,880 basehttp 9684 5228 "GET /static/add_products_img/img/favicon.ico HTTP/1.1" 200 1150
+INFO 2024-03-25 02:03:24,607 autoreload 19948 15992 Watching for file changes with StatReloader
+ERROR 2024-03-25 02:03:33,378 log 19948 2424 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\HW_5\add_products_img\views.py", line 13, in index
+    return render(request, 'add_products_img/index.html', context=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\GeekBrains\1_28_Django\Homeworks\.venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-03-25 02:03:33,416 basehttp 19948 2424 "GET / HTTP/1.1" 500 134548
+INFO 2024-03-25 02:05:52,529 autoreload 9384 20260 Watching for file changes with StatReloader
+INFO 2024-03-25 02:05:54,521 basehttp 9384 7584 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-25 02:05:55,202 basehttp 9384 7584 "GET /static/add_products_img/css/bootstrap.min.css HTTP/1.1" 200 208234
+INFO 2024-03-25 02:05:55,217 basehttp 9384 6820 "GET /static/add_products_img/css/my.styles.css HTTP/1.1" 200 1521
+INFO 2024-03-25 02:05:55,217 basehttp 9384 15244 "GET /static/add_products_img/js/bootstrap.min.js HTTP/1.1" 200 60089
+INFO 2024-03-25 02:05:55,280 basehttp 9384 7512 "GET /static/add_products_img/img/img_1.jpg HTTP/1.1" 200 55681
+INFO 2024-03-25 02:05:55,469 basehttp 9384 15244 "GET /static/add_products_img/img/favicon.ico HTTP/1.1" 200 1150
+INFO 2024-03-25 02:06:00,282 basehttp 9384 15244 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-25 02:06:02,099 basehttp 9384 15244 "GET /about/ HTTP/1.1" 200 3885
+INFO 2024-03-25 02:06:02,283 basehttp 9384 15244 "GET /static/add_products_img/img/img_2.jpg HTTP/1.1" 200 32052
+INFO 2024-03-25 02:06:03,571 basehttp 9384 15244 "GET /find_orders/ HTTP/1.1" 200 3849
+INFO 2024-03-25 02:06:05,316 basehttp 9384 15244 "GET /add_product/ HTTP/1.1" 200 4813
+INFO 2024-03-25 02:06:07,696 basehttp 9384 15244 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-25 02:12:31,928 autoreload 17508 15104 Watching for file changes with StatReloader
+INFO 2024-03-25 02:12:34,860 basehttp 17508 19964 "GET / HTTP/1.1" 200 5075
+INFO 2024-03-25 02:12:42,689 basehttp 17508 19964 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-03-25 02:12:42,943 basehttp 17508 19964 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-03-25 02:12:43,078 basehttp 17508 19964 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,084 basehttp 17508 3656 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,093 basehttp 17508 20392 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,103 basehttp 17508 13520 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,106 basehttp 17508 15600 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,367 basehttp 17508 15600 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:43,493 basehttp 17508 15600 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:54,406 basehttp 17508 15600 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-03-25 02:12:54,544 basehttp 17508 15600 "GET /admin/ HTTP/1.1" 200 7642
+INFO 2024-03-25 02:12:54,680 basehttp 17508 15600 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:55,073 basehttp 17508 13520 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-03-25 02:12:55,073 basehttp 17508 15600 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,158 basehttp 17508 13520 "GET /admin/add_products_img/client/add/ HTTP/1.1" 200 11393
+INFO 2024-03-25 02:13:03,337 basehttp 17508 13520 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,354 basehttp 17508 20392 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,368 basehttp 17508 19964 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,368 basehttp 17508 3656 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,400 basehttp 17508 20392 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,402 basehttp 17508 13520 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,425 basehttp 17508 3656 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,426 basehttp 17508 19964 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,427 basehttp 17508 19400 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,430 basehttp 17508 20392 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,450 basehttp 17508 15600 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:13:03,766 basehttp 17508 15600 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:03,769 basehttp 17508 19400 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:20,692 basehttp 17508 19400 "GET /admin/auth/user/ HTTP/1.1" 200 13149
+INFO 2024-03-25 02:13:20,849 basehttp 17508 19400 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:20,862 basehttp 17508 15600 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:13:20,881 basehttp 17508 19964 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:21,231 basehttp 17508 3656 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-03-25 02:13:21,250 basehttp 17508 19964 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:21,351 basehttp 17508 19964 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:21,354 basehttp 17508 15600 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-03-25 02:13:21,384 basehttp 17508 3656 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-03-25 02:18:23,099 basehttp 17508 12724 "GET /admin/add_products_img/client/ HTTP/1.1" 200 8688
+INFO 2024-03-25 02:18:23,245 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:18:28,558 basehttp 17508 12724 "GET /admin/add_products_img/client/add/ HTTP/1.1" 200 11393
+INFO 2024-03-25 02:18:28,737 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:18:34,586 basehttp 17508 12724 "GET /admin/add_products_img/order/ HTTP/1.1" 200 8681
+INFO 2024-03-25 02:18:34,752 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:18:38,218 basehttp 17508 12724 "GET /admin/add_products_img/order/add/ HTTP/1.1" 200 12734
+INFO 2024-03-25 02:18:38,387 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:18:50,138 basehttp 17508 12724 "GET /admin/add_products_img/product/ HTTP/1.1" 200 8695
+INFO 2024-03-25 02:18:50,321 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-25 02:18:52,910 basehttp 17508 12724 "GET /admin/add_products_img/product/add/ HTTP/1.1" 200 12043
+INFO 2024-03-25 02:18:53,061 basehttp 17508 12724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
